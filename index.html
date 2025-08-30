@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#lesson">Lesson</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="lesson" class="content">
+        <h2>Lesson 1: Introduction to JavaScript</h2>
+        <p>In this lesson, we will learn the basics of JavaScript, including variables, functions, and loops.</p>
+        <h3>What is JavaScript?</h3>
+        <p>JavaScript is a programming language commonly used in web development to create interactive effects within web browsers.</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </section>
+
+    <section id="quiz" class="content">
+        <h2>Quiz</h2>
+        <form id="quizForm">
+            <p>1. What does JavaScript do?</p>
+            <label><input type="radio" name="q1" value="A"> A) Make web pages interactive</label><br>
+            <label><input type="radio" name="q1" value="B"> B) Format text</label><br>
+            <label><input type="radio" name="q1" value="C"> C) Create images</label><br>
+
+            <p>2. Which of the following is a JavaScript function?</p>
+            <label><input type="radio" name="q2" value="A"> A) function() {} </label><br>
+            <label><input type="radio" name="q2" value="B"> B) if else </label><br>
+            <label><input type="radio" name="q2" value="C"> C) const </label><br>
+
+            <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+        </form>
+        <div id="quizResult"></div>
+    </section>
+
+    <section id="resources" class="content">
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript Tutorial</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 E-Learning Platform</p>
+    </footer>
+<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
